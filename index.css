@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "DS-Digital";
+  src: url(DS-DIGIT.TTF);
+}
+
 body {
   font-family: "DS-Digital", sans-serif;
   background: #1b244a;
