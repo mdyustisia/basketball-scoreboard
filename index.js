@@ -1,9 +1,9 @@
 let homeScore = document.getElementById("home-score");
-let guestScore = document.getElementById("guest-score");
+let awayScore = document.getElementById("away-score");
 let highlightLeaderEl = document.getElementById("highlight-leader");
 
 let homePoint = 0;
-let guestPoint = 0;
+let awayPoint = 0;
 
 // Home Point Button
 
@@ -22,31 +22,31 @@ function add3Home() {
   homeScore.textContent = homePoint;
 }
 
-// Guest Point Button
+// Away Point Button
 
-function add1Guest() {
-  guestPoint += 1;
-  guestScore.textContent = guestPoint;
+function add1Away() {
+  awayPoint += 1;
+  awayScore.textContent = awayPoint;
 }
 
-function add2Guest() {
-  guestPoint += 2;
-  guestScore.textContent = guestPoint;
+function add2Away() {
+  awayPoint += 2;
+  awayScore.textContent = awayPoint;
 }
 
-function add3Guest() {
-  guestPoint += 3;
-  guestScore.textContent = guestPoint;
+function add3Away() {
+  awayPoint += 3;
+  awayScore.textContent = awayPoint;
 }
 
 // Hightlight Leader
 
 function highlight() {
-  if (homePoint > guestPoint) {
+  if (homePoint > awayPoint) {
     highlightLeaderEl.textContent = "Home Lead";
-  } else if (homePoint < guestPoint) {
-    highlightLeaderEl.textContent = "Guest Lead";
-  } else if (homePoint === guestPoint) {
+  } else if (homePoint < awayPoint) {
+    highlightLeaderEl.textContent = "Away Lead";
+  } else if (homePoint === awayPoint) {
     highlightLeaderEl.textContent = "It's Tie";
   }
 }
@@ -71,9 +71,9 @@ function updateTimer() {
 
 function newGame() {
   homePoint = 0;
-  guestPoint = 0;
+  awayPoint = 0;
   homeScore.textContent = homePoint;
-  guestScore.textContent = guestPoint;
+  awayScore.textContent = awayPoint;
   time = 600;
   highlightLeaderEl.textContent = "Game Started";
 }
