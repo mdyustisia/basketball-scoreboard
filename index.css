@@ -1,0 +1,79 @@
+body {
+  font-family: "DS-Digital", sans-serif;
+  background: #1b244a;
+  color: white;
+  margin: 100px;
+  text-align: center;
+}
+
+/* Info Container */
+#highlight-title {
+  font-size: 2rem;
+  color: lightblue;
+}
+
+#highlight-leader {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#timer {
+  font-size: 3.5rem;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 100px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.score-container {
+  background-color: #080001;
+  width: 200px;
+  height: 140px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.container p {
+  font-size: 100px;
+  font-weight: 400;
+  padding-top: 15px;
+  color: red;
+  margin: 0;
+  font-style: italic;
+}
+
+button {
+  font-family: "DS-Digital", sans-serif;
+  border: 1px solid white;
+  color: white;
+  background: none;
+  margin: 5px;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+#new-game-btn {
+  margin-top: 50px;
+  width: 100px;
+  font-size: 1rem;
+}

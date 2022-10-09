@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link href="http://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>HOME</h3>
+        <div class="score-container">
+          <p id="home-score">0</p>
+        </div>
+        <div>
+          <button onclick="add1Home(); highlight()">+1</button>
+          <button onclick="add2Home(); highlight()">+2</button>
+          <button onclick="add3Home(); highlight()">+3</button>
+        </div>
+      </div>
+      <div class="info-container">
+        <p id="timer">10:00</p>
+        <p id="highlight-title">Highlight</p>
+        <p id="highlight-leader">Game Started</p>
+        <button id="new-game-btn" onclick="newGame()">New Game</button>
+      </div>
+      <div>
+        <h3>GUEST</h3>
+        <div class="score-container">
+          <p id="guest-score">0</p>
+        </div>
+        <div>
+          <button onclick="add1Guest(); highlight()">+1</button>
+          <button onclick="add2Guest(); highlight()">+2</button>
+          <button onclick="add3Guest(); highlight()">+3</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
